@@ -14,51 +14,68 @@
 
   访问Arduino的官方下载页面：<https://www.arduino.cc/en/software>
 
-  <p style="text-align: center;"><img src="media/image1.png" alt="" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+  <div align="center">
+    <img src="./media/image1.png" width="800">
+  </div><br>
 
   Arduino官方IDE支持不同的操作系统，请根据您的平台选择相应的版本。官方的IDE版本分为2.x和1.x两个系列版本。其中，Arduino 2.x版本仅支持Windows 10及其之后的系统。如果实验的是Windows 10或Windows 11的电脑，点击"Windows Win10 and newer，64 bits"进入下载页面。
 
-  <p style="text-align: center;"><img src="media/image2.png" alt="" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+  <div align="center">
+    <img src="./media/image2.png" width="800">
+  </div><br>
 
   如果电脑运行的是Windows 7，则只能选择Arduino 1.x版本。继续向下滚动页面，找到Arduino 1.8.19版本。点击"Windows Win7 and newer"进入下载页面。
 
-  <p style="text-align: center;"><img src="media/image3.png" alt="" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+  <div align="center">
+    <img src="./media/image3.png" width="800">
+  </div><br>
 
   点击下载链接后，将会跳转到下载界面。如果愿意为开源软件做出贡献，可以选择捐款。如果不想捐款，请点击"JUST DOWNLOAD"按钮。
 
-  <p style="text-align: center;"><img src="media/image4.png" alt="" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+  <div align="center">
+    <img src="./media/image4.png" width="400">
+  </div><br>
 
   之后会进入一个订阅页面，如果想接收Arduino官方的新闻邮件，可以留下email。如果不想接收新闻邮件，直接点击"JUST DOWNLOAD"按钮即可开始下载
 
-  <p style="text-align: center;"><img src="media/image5.png" alt="" style="display: block; margin-left: auto; margin-right: auto;" /></p>
-
+  <div align="center">
+    <img src="./media/image5.png" width="400">
+  </div><br>
   通过以上步骤，就可以下载Arduino IDE的安装包。后面会使用这个安装包，安装开发环境。
 
 - 安装Arduino IDE
 
   双击运行下载好的安装包文件，会弹出"许可证协议"，点击"我同意"。
-
-  <p style="text-align: center;"><img src="media/image6.png" alt="" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+  <div align="center">
+    <img src="./media/image6.png" width="400">
+  </div><br>
 
   在安装选项里选择要安装的用户，然后点击"下一步"。
-
-  <p style="text-align: center;"><img src="media/image7.png" alt="" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+  <div align="center">
+    <img src="./media/image7.png" width="400">
+  </div><br>
 
   选择好安装的目标文件夹，点击"安装"，就可以开始安装了。
 
-  <p style="text-align: center;"><img src="media/image8.png" alt="" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+  <div align="center">
+    <img src="./media/image8.png" width="400">
+  </div><br>
 
   安装过程会有进度条，等待安装完成即可。
-
-  <p style="text-align: center;"><img src="media/image9.png" alt="" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+  <div align="center">
+    <img src="./media/image9.png" width="400">
+  </div><br>
 
   安装完成后，选中"运行 Arduino IDE"，点击"完成"按钮。
-
-  <p style="text-align: center;"><img src="media/image10.png" alt="" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+  <div align="center">
+    <img src="./media/image10.png" width="400">
+  </div><br>
 
   这时候会启动安装好的Arduino IDE。此时界面文字是默认的英文语言，下面把它设置为中文语言。点击左上角菜单栏的"File"，在弹出的菜单页里选择"Preference..."。
 
-  <p style="text-align: center;"><img src="media/image11.png" alt="" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+  <div align="center">
+    <img src="./media/image11.png" width="500">
+  </div><br>
 
   在弹出的窗口里，有一项"Language"，右边是个下拉框，默认选择是"English"。
 
@@ -70,7 +87,9 @@
 
   窗口界面重新刷新之后，界面上的文字就变成了简体中文。
 
-  <p style="text-align: center;"><img src="media/image14.png" alt="" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+  <div align="center">
+    <img src="./media/image14.png" width="500">
+  </div><br>
 
 - 安装ESP32开发包
 
@@ -87,34 +106,50 @@
 
   将ESP32开发包的离线安装文件arduino-esp32.exe拷贝到这个文件夹中，双击运行离线安装文件。
 
-  <p style="text-align: center;"><img src="media/image15.png" alt="" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+  <div align="center">
+    <img src="./media/image15.png" width="300">
+  </div><br>
 
   点击"Extract"进行开发包的解压缩。
 
-  <p style="text-align: center;"><img src="media/image16.png" alt="" style="display: block; margin-left: auto; margin-right: auto;" /></p>
-  <p style="text-align: center;"><img src="media/image17.png" alt="" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+  <div align="center">
+    <img src="./media/image16.png" width="300">
+  </div><br>
+  <div align="center">
+    <img src="./media/image17.png" width="500">
+  </div><br>
 
   解压完毕能看到一个esp32的文件夹。
 
-  <p style="text-align: center;"><img src="media/image18.png" alt="" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+  <div align="center">
+    <img src="./media/image18.png" width="300">
+  </div><br>
 
   重新启动Arduino IDE窗口，点击左侧边栏上的开发板图标，会弹出开发板管理界面。
 
-  <p style="text-align: center;"><img src="media/image19.png" alt="" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+  <div align="center">
+    <img src="./media/image19.png" width="500">
+  </div><br>
 
   在开发板管理界面的搜索栏，输入"esp32"，会列出相关的开发包。
 
-  <p style="text-align: center;"><img src="media/image20.png" alt="" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+  <div align="center">
+    <img src="./media/image20.png" width="500">
+  </div><br>
 
   在开发包列表中，可以看到已经安装的esp32开发包版本为2.0.7。注意不要点击"更新"按钮，因为新版的开发包会和LCD显示屏的驱动不兼容。所以需要将这个esp32的开发包版本保持低于2.0.14版本。
 
   最后，还需要为ESP32的程序上传安装USB驱动。安装文件CH341SER.EXE也在之前的网盘地址中下载，下载完毕后在文件管理器里双击运行这个安装文件。
 
-  <p style="text-align: center;"><img src="media/image21.png" alt="" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+  <div align="center">
+    <img src="./media/image21.png" width="100">
+  </div><br>
 
   在弹出的提示中选择"是"，会进入安装界面。
 
-  <p style="text-align: center;"><img src="media/image22.png" alt="" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+  <div align="center">
+    <img src="./media/image22.png" width="400">
+  </div><br>
 
   点击"安装"，然后等待安装过程结束即可。
 
@@ -122,6 +157,8 @@
 
   源代码下载网址：<https://gitee.com/s-robot/esp32_grail>
 
-  <p style="text-align: center;"><img src="media/image23.png" alt="" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+  <div align="center">
+    <img src="./media/image23.png" width="600">
+  </div><br>
 
   进入下载页面后，点击右侧的"克隆/下载"按钮，即可下载包含全部实验程序源代码的压缩包。双击解压后，即可用Arduino IDE打开例子程序，查看源代码内容。

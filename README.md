@@ -2,7 +2,10 @@ ESP32-Grail 介绍
 
 **【功能组成】**
 
-<p style="text-align: center;"><img src="media/image1.jpeg" alt="" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+<div align="center">
+  <img src="./media/image1.jpeg" width="600">
+</div><br>
+
 
 ESP32-Grail是一款AI人工智能硬件入门的学习套件。套件的主体开发板由多个功能模块组成，可以通过相关实验的学习，掌握各种传感器和输入输出设备的基础使用方法。借助其核心ESP32的强劲性能，还能与云端大模型通讯，实现语音识别、语意理解以及语音合成等高阶功能。由浅入深，从传统功能到新的AI应用，逐步掌握新时代智能硬件的开发方法。
 
@@ -26,8 +29,12 @@ ESP32-Grail是一款AI人工智能硬件入门的学习套件。套件的主体�
 
 - ESP32核心模组，用于WiFi无线网和蓝牙通讯实验。
 
-<p style="text-align: center;"><img src="./media/image2.jpeg"/></p> 
-<p style="text-align: center;"><img src="./media/image3.jpeg"/></p>
+<div align="center">
+  <img src="./media/image2.jpeg" width="800">
+</div><br>
+<div align="center">
+  <img src="./media/image3.jpeg" width="800">
+</div><br>
 
 
 

@@ -24,11 +24,15 @@
 
 1.  在Arduino IDE里点击左上角菜单栏的"文件"，在弹出的菜单列表选择"新建项目"。
 
-  <p style="text-align: center;"><img src="media/image3.png" alt="" style="display: block; margin-left: auto; margin-right: auto;" /></p> 
+  <div align="center">
+    <img src="./media/image3.png" width="500">
+  </div><br>
   
   可以看到新建的程序中，只有setup()和loop()两个空函数。
 
-  <p style="text-align: center;"><img src="media/image4.png" alt="" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+  <div align="center">
+    <img src="./media/image4.png" width="500">
+  </div><br>
 
   - setup()函数只在程序启动的时候执行一次，所以可以把一些初始化的工作代码放在这个函数里。
 
@@ -67,19 +71,27 @@ void loop() {
 
   在Windows系统中，鼠标右键点击桌面左下角的"开始"图标。在弹出的菜单里选择"设备管理器"。在设备管理器里，展开"端口(COM和LPT)"，查看其中的USB-SERIAL CH340K(COMx)一项。记住其中的COMx，比如下图中的COM10，就是将程序上传到ESP32的端口号。
 
-  <p style="text-align: center;"><img src="media/image6.png" alt="" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+  <div align="center">
+    <img src="./media/image6.png" width="500">
+  </div><br>
 
   回到Arduino IDE，点击工具栏里的设备框左侧的向下箭头，弹出端口列表。从中选择上传程序的端口号，比如下图中的COM10。
 
-  <p style="text-align: center;"><img src="media/image7.png" alt="" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+  <div align="center">
+    <img src="./media/image7.png" width="400">
+  </div><br>
 
   在弹出的窗口中，搜索栏里输入"esp32s3 dev"。在下方的列表中，选择"ESP32S3 Dev Module"一项。然后点击窗口右下角的"确定"按钮。
 
-  <p style="text-align: center;"><img src="media/image8.png" alt="" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+  <div align="center">
+    <img src="./media/image8.png" width="500">
+  </div><br>
 
   回到Arduino IDE界面，点击工具栏里的上传按钮，就可以开始编译程序并上传到开发板的ESP32里运行了。
 
-  <p style="text-align: center;"><img src="media/image9.png" alt="" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+  <div align="center">
+    <img src="./media/image9.png" width="400">
+  </div><br>
 
   编译的过程会比较耗时，需要耐心等待。直到界面下方的终端窗口提示如下信息，说明程序上传完毕并已经开始执行。
 
@@ -97,11 +109,15 @@ void loop() {
   digitalWrite(47, HIGH);
   ```
 
-  <p style="text-align: center;"><img src="media/image11.png" alt="" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+  <div align="center">
+    <img src="./media/image11.png" width="400">
+  </div><br>
 
   然后再次点击工具栏中的上传按钮。
 
-  <p style="text-align: center;"><img src="media/image12.png" alt="" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+  <div align="center">
+    <img src="./media/image12.png" width="400">
+  </div><br>
 
   可以观察开发板里绿色LED的变化。
 
