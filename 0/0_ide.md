@@ -33,13 +33,13 @@
   点击下载链接后，将会跳转到下载界面。如果愿意为开源软件做出贡献，可以选择捐款。如果不想捐款，请点击"JUST DOWNLOAD"按钮。
 
   <div align="center">
-    <img src="./media/image4.png" width="400">
+    <img src="./media/image4.png" width="500">
   </div><br>
 
   之后会进入一个订阅页面，如果想接收Arduino官方的新闻邮件，可以留下email。如果不想接收新闻邮件，直接点击"JUST DOWNLOAD"按钮即可开始下载
 
   <div align="center">
-    <img src="./media/image5.png" width="400">
+    <img src="./media/image5.png" width="500">
   </div><br>
   通过以上步骤，就可以下载Arduino IDE的安装包。后面会使用这个安装包，安装开发环境。
 
@@ -47,28 +47,28 @@
 
   双击运行下载好的安装包文件，会弹出"许可证协议"，点击"我同意"。
   <div align="center">
-    <img src="./media/image6.png" width="400">
+    <img src="./media/image6.png" width="500">
   </div><br>
 
   在安装选项里选择要安装的用户，然后点击"下一步"。
   <div align="center">
-    <img src="./media/image7.png" width="400">
+    <img src="./media/image7.png" width="500">
   </div><br>
 
   选择好安装的目标文件夹，点击"安装"，就可以开始安装了。
 
   <div align="center">
-    <img src="./media/image8.png" width="400">
+    <img src="./media/image8.png" width="500">
   </div><br>
 
   安装过程会有进度条，等待安装完成即可。
   <div align="center">
-    <img src="./media/image9.png" width="400">
+    <img src="./media/image9.png" width="500">
   </div><br>
 
   安装完成后，选中"运行 Arduino IDE"，点击"完成"按钮。
   <div align="center">
-    <img src="./media/image10.png" width="400">
+    <img src="./media/image10.png" width="500">
   </div><br>
 
   这时候会启动安装好的Arduino IDE。此时界面文字是默认的英文语言，下面把它设置为中文语言。点击左上角菜单栏的"File"，在弹出的菜单页里选择"Preference..."。
@@ -79,11 +79,15 @@
 
   在弹出的窗口里，有一项"Language"，右边是个下拉框，默认选择是"English"。
 
-  <p style="text-align: center;"><img src="media/image12.png" alt="" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+  <div align="center">
+    <img src="./media/image12.png" width="600">
+  </div><br>
 
   点击下拉菜单按钮，选择"中文(简体)"，然后点击右侧的"OK"按钮。
 
-  <p style="text-align: center;"><img src="media/image13.png" alt="" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+  <div align="center">
+    <img src="./media/image13.png" width="600">
+  </div><br>
 
   窗口界面重新刷新之后，界面上的文字就变成了简体中文。
 
