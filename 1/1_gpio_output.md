@@ -101,7 +101,9 @@ void loop() {
 
   编译的过程会比较耗时，需要耐心等待。直到界面下方的终端窗口提示如下信息，说明程序上传完毕并已经开始执行。
 
-  <p style="text-align: center;"><img src="media/image10.jpg" alt="" style="display: block; margin-left: auto; margin-right: auto; width: 874px;" /></p>
+  <div align="center">
+  <img src="media/image10.jpg" width="874">
+</div>
 
   这时候再看开发板的右上角，可以看到绿色LED亮起。然后可以修改程序，将GPIO47的引脚拉高，看看会发生什么。将代码中的
 

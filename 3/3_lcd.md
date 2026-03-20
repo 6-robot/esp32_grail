@@ -12,7 +12,9 @@
 
 在开发板的正中央，有一个3.5英寸显示屏，这个显示屏和ESP32之间使用SPI通讯。SPI通信是单片机与外设交互的方式之一，它采用四线制设计，包含时钟、数据和片选信号线。在屏幕显示应用中，SPI通信表现出独特优势：它能够提供高达10 MHz的传输速率，完全满足LCD显示时大量图像数据的传输需求。当前程序中使用的320x480分辨率显示屏，每次刷新都需要传输大量数据，SPI的高速特性确保了显示的流畅性。此外，SPI接口的硬件实现简单，抗干扰能力强，且大多数单片机都内置了SPI硬件模块，这使得开发者能够轻松实现各种显示功能，同时通过DMA传输方式还可以降低CPU负担。这些特点使SPI成为单片机显示应用的理想选择。本开发板的ESP32与LCD显示屏的SPI通讯的电路原理图如下：
 
-<p style="text-align: center;"><img src="media/image1.jpg" alt="" style="display: block; margin-left: auto; margin-right: auto; width: 1325px;" /></p>
+<div align="center">
+  <img src="media/image1.jpg" width="1325">
+</div>
 
 可以看到其中ESP32的SPI引脚分配：
 
@@ -58,38 +60,54 @@
 
 在Arduino IDE的左侧边栏，点击"库管理"图标打开管理库的窗口。
 
-<p style="text-align: center;"><img src="media/image2.jpg" alt="" style="display: block; margin-left: auto; margin-right: auto; width: 541px;" /></p> 
+<div align="center">
+  <img src="media/image2.jpg" width="541">
+</div> 
 
 在"库管理"窗口的搜索栏中，输入"TFT_eSPI"，下方列表中会出现TFT_eSPI这个库的信息。点击"安装"按钮，自动完成这个库的下载安装。
 
-<p style="text-align: center;"><img src="media/image3.jpg" alt="" style="display: block; margin-left: auto; margin-right: auto; width: 774px;" /></p>
+<div align="center">
+  <img src="media/image3.jpg" width="774">
+</div>
 
 安装完毕后，需要在这个TFT_eSPI库里设置ESP32与之通讯的引脚编号。首先需要找到这个库文件所在的磁盘路径。在Arduino
     IDE里点击左上角菜单栏的"文件"，在弹出的菜单列表选择"首选项..."。
 
-<p style="text-align: center;"><img src="media/image4.jpg" alt="" style="display: block; margin-left: auto; margin-right: auto; width: 541px;" /></p>
+<div align="center">
+  <img src="media/image4.jpg" width="541">
+</div>
 
 在弹出的"首选项"窗口中，"项目文件夹地址"一项就是库文件所在的文件夹地址。记下这个文件夹地址，在Windows的文件管理器打开这个地址。
 
-<p style="text-align: center;"><img src="media/image5.jpg" alt="" style="display: block; margin-left: auto; margin-right: auto; width: 849px;" /></p>
+<div align="center">
+  <img src="media/image5.jpg" width="849">
+</div>
 
 在文件管理器中，可以看到这个文件夹中有个"liberaries"文件夹，双击进入这个文件夹。
 
-<p style="text-align: center;"><img src="media/image6.jpg" alt="" style="display: block; margin-left: auto; margin-right: auto; width: 775px;" /></p>
+<div align="center">
+  <img src="media/image6.jpg" width="775">
+</div>
 
 可以看到刚才下载的TFT_eSPI库的文件夹，双击进入这个文件夹。
 
-<p style="text-align: center;"><img src="media/image7.jpg" alt="" style="display: block; margin-left: auto; margin-right: auto; width: 771px;" /></p>
+<div align="center">
+  <img src="media/image7.jpg" width="771">
+</div>
 
 在TFT_eSPI库的文件夹中，找到"User_Setup.h"这个文件，双击打开它。
 
-<p style="text-align: center;"><img src="media/image8.jpg" alt="" style="display: block; margin-left: auto; margin-right: auto; width: 774px;" /></p>
+<div align="center">
+  <img src="media/image8.jpg" width="774">
+</div>
 
 在 "User_Setup.h"文件中，进行两处修改：
 
 - 本开发板使用的LCD驱动芯片为ST7796U，需要切换驱动型号到ST779x系列。所以将"#define ILI9341_DRIVER"一项注释掉，将"#define ST7796_DRIVER"一项恢复。
 
-<p style="text-align: center;"><img src="media/image9.jpg" alt="" style="display: block; margin-left: auto; margin-right: auto; width: 1483px;" /></p>
+<div align="center">
+  <img src="media/image9.jpg" width="1483">
+</div>
 
 - 按照电路图中ESP32与显示屏连接的SPI引脚序号，对文件中的引脚序号进行修改。
 
@@ -127,13 +145,17 @@
     </table>
   </div>
 
-<p style="text-align: center;"><img src="media/image10.jpg" alt="" style="display: block; margin-left: auto; margin-right: auto; width: 1481px;" /></p>
+<div align="center">
+  <img src="media/image10.jpg" width="1481">
+</div>
 
 上述修改完成后，按下键盘的Ctrl + S组合键，保存修改的内容。
 
 在Arduino IDE里点击左上角菜单栏的"文件"，在弹出的菜单列表选择"新建项目"。
 
-<p style="text-align: center;"><img src="media/image11.jpg" alt="" style="display: block; margin-left: auto; margin-right: auto; width: 570px;" /></p>
+<div align="center">
+  <img src="media/image11.jpg" width="570">
+</div>
 
 本节实验的实现思路是：在setup()函数里对LCD显示屏进行初始化。然后在loop()函数在LCD屏幕上显示"Hello World！"。在下载的例子源代码包里，对应的源码文件为lcd.ino。完整代码如下：
 ```c
@@ -182,27 +204,39 @@ void loop() {
 
 程序编写完毕后，需要为其设置目标设备和程序上传端口，才能进行程序的编译和上传。首先将开发板的Type-C接口，通过USB线缆连接到电脑的USB插口上。
 
-<p style="text-align: center;"><img src="media/image12.jpg" alt="" style="display: block; margin-left: auto; margin-right: auto; width: 1078px;" /></p>
+<div align="center">
+  <img src="media/image12.jpg" width="1078">
+</div>
 
 在Windows系统中，鼠标右键点击桌面左下角的"开始"图标。在弹出的菜单里选择"设备管理器"。在设备管理器里，展开"端口(COM和LPT)"，查看其中的USB-SERIAL CH340K(COMx)一项。记住其中的COMx，比如下图中的COM10，就是将程序上传到ESP32的端口号。
 
-<p style="text-align: center;"><img src="media/image13.jpg" alt="" style="display: block; margin-left: auto; margin-right: auto; width: 614px;" /></p>
+<div align="center">
+  <img src="media/image13.jpg" width="614">
+</div>
 
 回到Arduino IDE，点击工具栏里的设备框左侧的向下箭头，弹出端口列表。从中选择上传程序的端口号，比如下图中的COM10。
 
-<p style="text-align: center;"><img src="media/image14.jpg" alt="" style="display: block; margin-left: auto; margin-right: auto; width: 528px;" /></p>
+<div align="center">
+  <img src="media/image14.jpg" width="528">
+</div>
 
 在弹出的窗口中，搜索栏里输入"esp32s3 dev"。在下方的列表中，选择"ESP32S3 Dev Module"一项。然后点击窗口右下角的"确定"按钮。
 
-<p style="text-align: center;"><img src="media/image15.jpg" alt="" style="display: block; margin-left: auto; margin-right: auto; width: 751px;" /></p>
+<div align="center">
+  <img src="media/image15.jpg" width="751">
+</div>
 
 回到Arduino IDE界面，点击工具栏里的上传按钮，就可以开始编译程序并上传到开发板的ESP32里运行了。
 
-<p style="text-align: center;"><img src="media/image16.jpg" alt="" style="display: block; margin-left: auto; margin-right: auto; width: 502px;" /></p>
+<div align="center">
+  <img src="media/image16.jpg" width="502">
+</div>
 
 编译的过程会比较耗时，需要耐心等待。直到界面下方的终端窗口提示如下信息，说明程序上传完毕并已经开始执行。
 
-<p style="text-align: center;"><img src="media/image17.jpg" alt="" style="display: block; margin-left: auto; margin-right: auto; width: 874px;" /></p>
+<div align="center">
+  <img src="media/image17.jpg" width="874">
+</div>
 
 这时候再来查看开发板的显示屏，可以看到红色的背景，左上角显示文字"Hello World!"。
 
@@ -210,7 +244,9 @@ void loop() {
 
 可以引入U8g2库，在LCD屏幕上显示中文。在Windows的文件管理器打开之前的那个库文件地址。将配套资料里的U8g2_for_TFT_eSPI文件夹拷贝进去。
 
-<p style="text-align: center;"><img src="media/image18.jpg" alt="" style="display: block; margin-left: auto; margin-right: auto; width: 772px;" /></p>
+<div align="center">
+  <img src="media/image18.jpg" width="772">
+</div>
 
 在下载的例子源代码包里，对应的源码文件为lcd_chinese.ino。程序代码修改如下：
 ```c
@@ -267,7 +303,9 @@ void loop() {
 
 回到Arduino IDE界面，点击工具栏里的上传按钮，就可以开始编译程序并上传到开发板的ESP32里运行了。
 
-<p style="text-align: center;"><img src="media/image16.jpg" alt="" style="display: block; margin-left: auto; margin-right: auto; width: 502px;" /></p>
+<div align="center">
+  <img src="media/image16.jpg" width="502">
+</div>
 
 经过一段时间的编译和上传过程，再来查看开发板的显示屏，可以看到红色的背景，左上角显示中文文字"世界你好！"。
 

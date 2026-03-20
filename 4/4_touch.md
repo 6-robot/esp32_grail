@@ -12,7 +12,9 @@
 
 开发板使用的LCD显示屏，是一款带多点电容触控感知的屏幕。触控感知使用的GT911芯片，ESP32和GT911触控芯片是通过I2C总线进行通讯的。I2C通信是单片机与触控屏交互的理想选择，它仅需要两根信号线（SDA和SCL）就能实现双向数据传输。在触控屏应用中，因为人手触摸的操作频率相对通讯速率来说比较低，I2C通信的低速特性（通常100kHz-400kHz）可以很好满足触控采样的需求。再加上其抗干扰能力强、线路简单的特点，使其成为触控屏应用的理想选择。在本实验中，触控芯片GT911与ESP32连接的电路图如下：
 
-<p style="text-align: center;"><img src="media/image1.jpg" alt="" style="display: block; margin-left: auto; margin-right: auto; width: 1078px;" /></p>
+<div align="center">
+  <img src="media/image1.jpg" width="1078">
+</div>
 
 可以看到连接的引脚分配如下：
 
@@ -36,11 +38,15 @@
 
 在Arduino IDE的左侧边栏，点击"库管理"图标打开管理库的窗口。
 
-<p style="text-align: center;"><img src="media/image2.jpg" alt="" style="display: block; margin-left: auto; margin-right: auto; width: 462px;" /></p>
+<div align="center">
+  <img src="media/image2.jpg" width="462">
+</div>
 
 在"库管理"窗口的搜索栏中，输入"TAMC_GT911"，下方列表中会出现TAMC_GT911这个库的信息。点击"安装"按钮，自动完成这个库的下载安装。
 
-<p style="text-align: center;"><img src="media/image3.jpg" alt="" style="display: block; margin-left: auto; margin-right: auto; width: 666px;" /></p>
+<div align="center">
+  <img src="media/image3.jpg" width="666">
+</div>
 
 在Arduino IDE里进行代码编写。本节实验的实现思路是：在setup()函数里进行触控芯片GT911和LCD显示驱动库TFT_eSPI的初始化。然后在loop()函数里使用TFT_eSPI的绘图函数，显示触控点在屏幕上的位置。同时在屏幕上显示触控点的坐标数值，这样就能比较直观的观察触控点信息的变化了。
 在下载的例子源代码包里，对应的源码文件为touch.ino。具体代码如下：
@@ -170,23 +176,35 @@ void loop() {
 整个循环结束后，程序会延时30毫秒，这样可以控制刷新频率，避免程序运行过快。这个延时值可以根据实际需求调整，值越小刷新越快，但也会占用更多系统资源。
 
 程序编写完毕后，需要为其设置目标设备和程序上传端口，才能进行程序的编译和上传。首先将开发板的Type-C接口，通过USB线缆连接到电脑的USB插口上。
-<p style="text-align: center;"><img src="media/image4.jpg" alt="" style="display: block; margin-left: auto; margin-right: auto; width: 1078px;" /></p>
+<div align="center">
+  <img src="media/image4.jpg" width="1078">
+</div>
 
 在Windows系统中，鼠标右键点击桌面左下角的"开始"图标。在弹出的菜单里选择"设备管理器"。在设备管理器里，展开"端口(COM和LPT)"，查看其中的USB-SERIAL CH340K(COMx)一项。记住其中的COMx，比如下图中的COM10，就是将程序上传到ESP32的端口号。
-<p style="text-align: center;"><img src="media/image5.jpg" alt="" style="display: block; margin-left: auto; margin-right: auto; width: 614px;" /></p>
+<div align="center">
+  <img src="media/image5.jpg" width="614">
+</div>
 
 回到Arduino IDE，点击工具栏里的设备框左侧的向下箭头，弹出端口列表。从中选择上传程序的端口号，比如下图中的COM10。
-<p style="text-align: center;"><img src="media/image6.jpg" alt="" style="display: block; margin-left: auto; margin-right: auto; width: 528px;" /></p>
+<div align="center">
+  <img src="media/image6.jpg" width="528">
+</div>
 
 在弹出的窗口中，搜索栏里输入"esp32s3 dev"。在下方的列表中，选择"ESP32S3 Dev Module"一项。然后点击窗口右下角的"确定"按钮。
-<p style="text-align: center;"><img src="media/image7.jpg" alt="" style="display: block; margin-left: auto; margin-right: auto; width: 751px;" /></p>
+<div align="center">
+  <img src="media/image7.jpg" width="751">
+</div>
      
 回到Arduino IDE界面，点击工具栏里的上传按钮，就可以开始编译程序并上传到开发板的ESP32里运行了。
 
-<p style="text-align: center;"><img src="media/image8.jpg" alt="" style="display: block; margin-left: auto; margin-right: auto; width: 502px;" /></p>
+<div align="center">
+  <img src="media/image8.jpg" width="502">
+</div>
 
 编译的过程会比较耗时，需要耐心等待。直到界面下方的终端窗口提示如下信息，说明程序上传完毕并已经开始执行。
-<p style="text-align: center;"><img src="media/image9.jpg" alt="" style="display: block; margin-left: auto; margin-right: auto; width: 874px;" /></p>
+<div align="center">
+  <img src="media/image9.jpg" width="874">
+</div>
 
 这时候再来到开发板面板上的显示屏。用手指在屏幕上滑动，查看触控点的信息显示，以及触控点位置的显示。用不同手指的不同接触面积来进行测试，直观的感受这块屏幕的触控传感能力。
 

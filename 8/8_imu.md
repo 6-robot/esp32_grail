@@ -10,7 +10,9 @@
 
 在开发板面板的右侧，有一枚姿态传感器MPU6050。它们在电路原理图中的表示如下：
 
-<p style="text-align: center;"><img src="media/image1.jpg" alt="" style="display: block; margin-left: auto; margin-right: auto; width: 1077px;" /></p>
+<div align="center">
+  <img src="media/image1.jpg" width="1077">
+</div>
 
 可以看到，这枚传感器是与ESP32的GPIO9和GPIO10连接，使用I2C总线与ESP32通讯。ESP32内置两个独立的I2C控制器。它通过SDA（数据线）和SCL（时钟线）实现与外部设备的双向通信，支持标准模式（100kHz）和快速模式（400kHz）。每个控制器都可以灵活配置引脚，并支持多设备共享总线的主从通信架构。在这个实验里，将会使用第一个I2C控制器（序号0）来与MPU6050姿态传感器进行通讯。对MPU6050传感器的数据解析，在Arduino里也有现成的库，直接调用就行。
 
@@ -20,15 +22,21 @@
 
 2.  在Arduino IDE的左侧边栏，点击"库管理"图标打开管理库的窗口。
 
-<p style="text-align: center;"><img src="media/image2.jpg" alt="" style="display: block; margin-left: auto; margin-right: auto; width: 445px;" /></p>
+<div align="center">
+  <img src="media/image2.jpg" width="445">
+</div>
 
 在"库管理"窗口的搜索栏中，输入"MPU6050_tockn"，下方列表中会出现MPU6050_tockn这个库的信息。点击"安装"按钮，自动完成这个库的下载安装。
 
-<p style="text-align: center;"><img src="media/image3.jpg" alt="" style="display: block; margin-left: auto; margin-right: auto; width: 464px;" /></p>
+<div align="center">
+  <img src="media/image3.jpg" width="464">
+</div>
 
 3.  在Arduino IDE里点击左上角菜单栏的"文件"，在弹出的菜单列表选择"新建项目"。
 
-<p style="text-align: center;"><img src="media/image4.jpg" alt="" style="display: block; margin-left: auto; margin-right: auto; width: 570px;" /></p>
+<div align="center">
+  <img src="media/image4.jpg" width="570">
+</div>
 
 在下载的例子源代码包里，对应的源码文件为imu.ino。完整代码如下：
 ```c
@@ -173,27 +181,39 @@ void loop() {
 
 4.  程序编写完毕后，需要为其设置目标设备和程序上传端口，才能进行程序的编译和上传。首先将开发板的Type-C接口，通过USB线缆连接到电脑的USB插口上。
 
-<p style="text-align: center;"><img src="media/image5.jpg" alt="" style="display: block; margin-left: auto; margin-right: auto; width: 1078px;" /></p>
+<div align="center">
+  <img src="media/image5.jpg" width="1078">
+</div>
 
 在Windows系统中，鼠标右键点击桌面左下角的"开始"图标。在弹出的菜单里选择"设备管理器"。在设备管理器里，展开"端口(COM和LPT)"，查看其中的USB-SERIAL CH340K(COMx)一项。记住其中的COMx，比如下图中的COM10，就是将程序上传到ESP32的端口号。
 
-<p style="text-align: center;"><img src="media/image6.jpg" alt="" style="display: block; margin-left: auto; margin-right: auto; width: 614px;" /></p>
+<div align="center">
+  <img src="media/image6.jpg" width="614">
+</div>
 
 回到Arduino IDE，点击工具栏里的设备框左侧的向下箭头，弹出端口列表。从中选择上传程序的端口号，比如下图中的COM10。
 
-<p style="text-align: center;"><img src="media/image7.jpg" alt="" style="display: block; margin-left: auto; margin-right: auto; width: 528px;" /></p>
+<div align="center">
+  <img src="media/image7.jpg" width="528">
+</div>
 
 在弹出的窗口中，搜索栏里输入"esp32s3 dev"。在下方的列表中，选择"ESP32S3 Dev Module"一项。然后点击窗口右下角的"确定"按钮。
 
-<p style="text-align: center;"><img src="media/image8.jpg" alt="" style="display: block; margin-left: auto; margin-right: auto; width: 751px;" /></p>
+<div align="center">
+  <img src="media/image8.jpg" width="751">
+</div>
 
 5.  回到Arduino IDE界面，点击工具栏里的上传按钮，就可以开始编译程序并上传到开发板的ESP32里运行了。
 
-<p style="text-align: center;"><img src="media/image9.jpg" alt="" style="display: block; margin-left: auto; margin-right: auto; width: 502px;" /></p>
+<div align="center">
+  <img src="media/image9.jpg" width="502">
+</div>
 
 编译的过程会比较耗时，需要耐心等待。直到界面下方的终端窗口提示如下信息，说明程序上传完毕并已经开始执行。
 
-<p style="text-align: center;"><img src="media/image10.jpg" alt="" style="display: block; margin-left: auto; margin-right: auto; width: 874px;" /></p>
+<div align="center">
+  <img src="media/image10.jpg" width="874">
+</div>
 
 这时候来到开发板面板的LCD显示屏，就能看到姿态传感器返回的姿态数值了。可以将姿态传感器所在的小电路板取下来，转动起来查看数值变化。
 

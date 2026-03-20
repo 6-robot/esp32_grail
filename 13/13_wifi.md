@@ -16,7 +16,9 @@
 
 2.  在Arduino IDE里点击左上角菜单栏的"文件"，在弹出的菜单列表选择"新建项目"。
 
-<p style="text-align: center;"><img src="media/image1.jpg" alt="" style="display: block; margin-left: auto; margin-right: auto; width: 570px;" /></p>
+<div align="center">
+  <img src="media/image1.jpg" width="570">
+</div>
 
 在下载的例子源代码包里，对应的源码文件为wifi.ino。完整代码如下：
 ```c
@@ -227,27 +229,39 @@ void loop() {
 
 3.  程序编写完毕后，需要为其设置目标设备和程序上传端口，才能进行程序的编译和上传。首先将开发板的Type-C接口，通过USB线缆连接到电脑的USB插口上。
 
-<p style="text-align: center;"><img src="media/image2.jpg" alt="" style="display: block; margin-left: auto; margin-right: auto; width: 1078px;" /></p>
+<div align="center">
+  <img src="media/image2.jpg" width="1078">
+</div>
 
 在Windows系统中，鼠标右键点击桌面左下角的"开始"图标。在弹出的菜单里选择"设备管理器"。在设备管理器里，展开"端口(COM和LPT)"，查看其中的USB-SERIAL CH340K(COMx)一项。记住其中的COMx，比如下图中的COM10，就是将程序上传到ESP32的端口号。
 
-<p style="text-align: center;"><img src="media/image3.jpg" alt="" style="display: block; margin-left: auto; margin-right: auto; width: 614px;" /></p>
+<div align="center">
+  <img src="media/image3.jpg" width="614">
+</div>
 
 回到Arduino IDE，点击工具栏里的设备框左侧的向下箭头，弹出端口列表。从中选择上传程序的端口号，比如下图中的COM10。
 
-<p style="text-align: center;"><img src="media/image4.jpg" alt="" style="display: block; margin-left: auto; margin-right: auto; width: 528px;" /></p>
+<div align="center">
+  <img src="media/image4.jpg" width="528">
+</div>
 
 在弹出的窗口中，搜索栏里输入"esp32s3 dev"。在下方的列表中，选择"ESP32S3 Dev Module"一项。然后点击窗口右下角的"确定"按钮。
 
-<p style="text-align: center;"><img src="media/image5.jpg" alt="" style="display: block; margin-left: auto; margin-right: auto; width: 751px;" /></p>
+<div align="center">
+  <img src="media/image5.jpg" width="751">
+</div>
 
 4.  回到Arduino IDE界面，点击工具栏里的上传按钮，就可以开始编译程序并上传到开发板的ESP32里运行了。
 
-<p style="text-align: center;"><img src="media/image6.jpg" alt="" style="display: block; margin-left: auto; margin-right: auto; width: 502px;" /></p>
+<div align="center">
+  <img src="media/image6.jpg" width="502">
+</div>
 
 编译的过程会比较耗时，需要耐心等待。直到界面下方的终端窗口提示如下信息，说明程序上传完毕并已经开始执行。
 
-<p style="text-align: center;"><img src="media/image7.jpg" alt="" style="display: block; margin-left: auto; margin-right: auto; width: 874px;" /></p>
+<div align="center">
+  <img src="media/image7.jpg" width="874">
+</div>
 
 这时候再来查看开发板的显示屏，可以看到连接WiFi的过程信息。当ESP32连接到WiFi，并在屏幕上显示自身IP时。用电脑或者手机连接同一个WiFi，然后在网页浏览器里输入ESP32的IP地址。就能打开一个网页，显示两行文字："点击这里熄灭蓝色LED"和"点击这里点亮蓝色LED"，其中"这里"这个单词是可以点击的。分别点击这两个"这里"，查看开发板上的蓝色LED是否按照点击指令进行亮灭处理。
 

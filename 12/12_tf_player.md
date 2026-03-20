@@ -10,7 +10,9 @@
 
 在开发板面板的左上方，有一个TF读卡器。它们在电路原理图中的表示如下：
 
-<p style="text-align: center;"><img src="media/image1.jpg" alt="" style="display: block; margin-left: auto; margin-right: auto; width: 1077px;" /></p>
+<div align="center">
+  <img src="media/image1.jpg" width="1077">
+</div>
 
 可以看到，这个TF读卡器是通过SPI与ESP32通讯的。在这个电路图里，TF读卡器是与ESP32的GPIO16、GPIO40、GPIO41和GPIO42连接。在这个实验里，将从TF卡中读取WAV声音文件数据，然后通过MAX98357A音频芯片将音频数据播放出来。
 
@@ -19,7 +21,9 @@
 1.  在Arduino
     IDE里点击左上角菜单栏的"文件"，在弹出的菜单列表选择"新建项目"。
 
-<p style="text-align: center;"><img src="media/image2.jpg" alt="" style="display: block; margin-left: auto; margin-right: auto; width: 570px;" /></p>
+<div align="center">
+  <img src="media/image2.jpg" width="570">
+</div>
 
 在下载的例子源代码包里，对应的源码文件为tf_player.ino。完整代码如下：
 ```c
@@ -292,31 +296,45 @@ void loop() {
 
 2.  程序编写完毕后，需要为其设置目标设备和程序上传端口，才能进行程序的编译和上传。首先将开发板的Type-C接口，通过USB线缆连接到电脑的USB插口上。
 
-<p style="text-align: center;"><img src="media/image3.jpg" alt="" style="display: block; margin-left: auto; margin-right: auto; width: 1078px;" /></p>
+<div align="center">
+  <img src="media/image3.jpg" width="1078">
+</div>
 
 在Windows系统中，鼠标右键点击桌面左下角的"开始"图标。在弹出的菜单里选择"设备管理器"。在设备管理器里，展开"端口(COM和LPT)"，查看其中的USB-SERIAL CH340K(COMx)一项。记住其中的COMx，比如下图中的COM10，就是将程序上传到ESP32的端口号。
 
-<p style="text-align: center;"><img src="media/image4.jpg" alt="" style="display: block; margin-left: auto; margin-right: auto; width: 614px;" /></p>
+<div align="center">
+  <img src="media/image4.jpg" width="614">
+</div>
 
 回到Arduino IDE，点击工具栏里的设备框左侧的向下箭头，弹出端口列表。从中选择上传程序的端口号，比如下图中的COM10。
 
-<p style="text-align: center;"><img src="media/image5.jpg" alt="" style="display: block; margin-left: auto; margin-right: auto; width: 528px;" /></p>
+<div align="center">
+  <img src="media/image5.jpg" width="528">
+</div>
 
 在弹出的窗口中，搜索栏里输入"esp32s3 dev"。在下方的列表中，选择"ESP32S3 Dev Module"一项。然后点击窗口右下角的"确定"按钮。
 
-<p style="text-align: center;"><img src="media/image6.jpg" alt="" style="display: block; margin-left: auto; margin-right: auto; width: 751px;" /></p>
+<div align="center">
+  <img src="media/image6.jpg" width="751">
+</div>
 
 3.  将存储了record.wav文件的TF卡插入开发板背面的TF读卡器。
 
-<p style="text-align: center;"><img src="media/image7.jpg" alt="" style="display: block; margin-left: auto; margin-right: auto; width: 781px;" /></p>
+<div align="center">
+  <img src="media/image7.jpg" width="781">
+</div>
 
 4.  回到Arduino IDE界面，点击工具栏里的上传按钮，就可以开始编译程序并上传到开发板的ESP32里运行了。
 
-<p style="text-align: center;"><img src="media/image8.jpg" alt="" style="display: block; margin-left: auto; margin-right: auto; width: 502px;" /></p>
+<div align="center">
+  <img src="media/image8.jpg" width="502">
+</div>
 
 编译的过程会比较耗时，需要耐心等待。直到界面下方的终端窗口提示如下信息，说明程序上传完毕并已经开始执行。
 
-<p style="text-align: center;"><img src="media/image9.jpg" alt="" style="display: block; margin-left: auto; margin-right: auto; width: 874px;" /></p>
+<div align="center">
+  <img src="media/image9.jpg" width="874">
+</div>
 
 程序执行之后，先观察实验面板上的蓝色LED。如果按钮未按下的情况下，蓝色LED亮起，说明TF读卡器初始化失败或者TF卡中读取不到record.wav文件。拔插TF卡，并给开发板重新上电。
 
