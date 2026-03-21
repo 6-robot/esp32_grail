@@ -266,5 +266,5 @@ void loop() {
 这时候再来查看开发板的显示屏，可以看到连接WiFi的过程信息。当ESP32连接到WiFi，并在屏幕上显示自身IP时。用电脑或者手机连接同一个WiFi，然后在网页浏览器里输入ESP32的IP地址。就能打开一个网页，显示两行文字："点击这里熄灭蓝色LED"和"点击这里点亮蓝色LED"，其中"这里"这个单词是可以点击的。分别点击这两个"这里"，查看开发板上的蓝色LED是否按照点击指令进行亮灭处理。
 
 <div align="center">
-  <a href="../README.md" style="display: inline-block; margin: 10px 0 18px; padding: 10px 18px; border-radius: 999px; background: linear-gradient(135deg, #1f6feb, #3fb950); color: #ffffff; text-decoration: none; font-weight: 700; box-shadow: 0 4px 12px rgba(31, 111, 235, 0.25);">返回 README 主页</a>
+  <a href="../../README.md" style="display: inline-block; margin: 10px 0 18px; padding: 10px 18px; border-radius: 999px; background: linear-gradient(135deg, #1f6feb, #3fb950); color: #ffffff; text-decoration: none; font-weight: 700; box-shadow: 0 4px 12px rgba(31, 111, 235, 0.25);">返回 README 主页</a>
 </div>

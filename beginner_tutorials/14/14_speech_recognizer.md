@@ -486,5 +486,5 @@ void loop() {
 程序执行之后，先观察实验面板上的LCD显示屏。待WiFi连接成功后，按下绿色按钮，开始录音。待绿色LED亮起时，对着实验面板上的麦克风说话。待绿色LED熄灭后，回到LCD显示屏，查看识别结果。按下蓝色按钮，可以回放之前麦克风录制的音频，对照显示屏上的识别结果，看看是否一致。
 
 <div align="center">
-  <a href="../README.md" style="display: inline-block; margin: 10px 0 18px; padding: 10px 18px; border-radius: 999px; background: linear-gradient(135deg, #1f6feb, #3fb950); color: #ffffff; text-decoration: none; font-weight: 700; box-shadow: 0 4px 12px rgba(31, 111, 235, 0.25);">返回 README 主页</a>
+  <a href="../../README.md" style="display: inline-block; margin: 10px 0 18px; padding: 10px 18px; border-radius: 999px; background: linear-gradient(135deg, #1f6feb, #3fb950); color: #ffffff; text-decoration: none; font-weight: 700; box-shadow: 0 4px 12px rgba(31, 111, 235, 0.25);">返回 README 主页</a>
 </div>

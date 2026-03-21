@@ -209,5 +209,5 @@ void loop() {
 这时候再来到开发板面板上的显示屏。用手指在屏幕上滑动，查看触控点的信息显示，以及触控点位置的显示。用不同手指的不同接触面积来进行测试，直观的感受这块屏幕的触控传感能力。
 
 <div align="center">
-  <a href="../README.md" style="display: inline-block; margin: 10px 0 18px; padding: 10px 18px; border-radius: 999px; background: linear-gradient(135deg, #1f6feb, #3fb950); color: #ffffff; text-decoration: none; font-weight: 700; box-shadow: 0 4px 12px rgba(31, 111, 235, 0.25);">返回 README 主页</a>
+  <a href="../../README.md" style="display: inline-block; margin: 10px 0 18px; padding: 10px 18px; border-radius: 999px; background: linear-gradient(135deg, #1f6feb, #3fb950); color: #ffffff; text-decoration: none; font-weight: 700; box-shadow: 0 4px 12px rgba(31, 111, 235, 0.25);">返回 README 主页</a>
 </div>
