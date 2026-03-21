@@ -64,42 +64,62 @@ ESP32-Grail是一款AI人工智能硬件入门的学习套件。套件的主体�
 **【趣味游戏】**
 
 - [1_snake_game](./single_player_games/1_snake_game/README.md)
+
   <a href="./single_player_games/1_snake_game/README.md"><img src="./single_player_games/1_snake_game/1_snake_game.jpg" width="800"></a>
 - [2_tetris](./single_player_games/2_tetris/README.md)
+
   <a href="./single_player_games/2_tetris/README.md"><img src="./single_player_games/2_tetris/2_tetris.jpg" width="800"></a>
 - [3_flappy_bird](./single_player_games/3_flappy_bird/README.md)
+
   <a href="./single_player_games/3_flappy_bird/README.md"><img src="./single_player_games/3_flappy_bird/3_flappy_bird.jpg" width="800"></a>
 - [4_tank_battle](./single_player_games/4_tank_battle/README.md)
+
   <a href="./single_player_games/4_tank_battle/README.md"><img src="./single_player_games/4_tank_battle/4_tank_battle.jpg" width="800"></a>
 - [5_rad_runner](./single_player_games/5_rad_runner/README.md)
+
   <a href="./single_player_games/5_rad_runner/README.md"><img src="./single_player_games/5_rad_runner/5_rad_runner.jpg" width="800"></a>
 - [6_gold_miner](./single_player_games/6_gold_miner/README.md)
+
   <a href="./single_player_games/6_gold_miner/README.md"><img src="./single_player_games/6_gold_miner/6_gold_miner.jpg" width="800"></a>
 - [7_pacman](./single_player_games/7_pacman/README.md)
+
   <a href="./single_player_games/7_pacman/README.md"><img src="./single_player_games/7_pacman/7_pacman.jpg" width="800"></a>
 - [8_space_invaders](./single_player_games/8_space_invaders/README.md)
+
   <a href="./single_player_games/8_space_invaders/README.md"><img src="./single_player_games/8_space_invaders/8_space_invaders.jpg" width="800"></a>
 - [9_bomberman](./single_player_games/9_bomberman/README.md)
+
   <a href="./single_player_games/9_bomberman/README.md"><img src="./single_player_games/9_bomberman/9_bomberman.jpg" width="800"></a>
 - [10_balloon_fight](./single_player_games/10_balloon_fight/README.md)
+
   <a href="./single_player_games/10_balloon_fight/README.md"><img src="./single_player_games/10_balloon_fight/10_balloon_fight.jpg" width="800"></a>
 - [11_hori_shooter](./single_player_games/11_hori_shooter/README.md)
+
   <a href="./single_player_games/11_hori_shooter/README.md"><img src="./single_player_games/11_hori_shooter/11_hori_shooter.jpg" width="800"></a>
 - [12_kung_fu](./single_player_games/12_kung_fu/README.md)
+
   <a href="./single_player_games/12_kung_fu/README.md"><img src="./single_player_games/12_kung_fu/12_kung_fu.jpg" width="800"></a>
 - [13_field_combat](./single_player_games/13_field_combat/README.md)
+
   <a href="./single_player_games/13_field_combat/README.md"><img src="./single_player_games/13_field_combat/13_field_combat.jpg" width="800"></a>
 - [14_bubble_shooter](./single_player_games/14_bubble_shooter/README.md)
+
   <a href="./single_player_games/14_bubble_shooter/README.md"><img src="./single_player_games/14_bubble_shooter/14_bubble_shooter.jpg" width="800"></a>
 - [15_billiards](./single_player_games/15_billiards/README.md)
+
   <a href="./single_player_games/15_billiards/README.md"><img src="./single_player_games/15_billiards/15_billiards.jpg" width="800"></a>
 - [16_zuma](./single_player_games/16_zuma/README.md)
+
   <a href="./single_player_games/16_zuma/README.md"><img src="./single_player_games/16_zuma/16_zuma.jpg" width="800"></a>
 - [17_donkey_kong](./single_player_games/17_donkey_kong/README.md)
+
   <a href="./single_player_games/17_donkey_kong/README.md"><img src="./single_player_games/17_donkey_kong/17_donkey_kong.jpg" width="800"></a>
 - [18_plants_vs_zombies](./single_player_games/18_plants_vs_zombies/README.md)
+
   <a href="./single_player_games/18_plants_vs_zombies/README.md"><img src="./single_player_games/18_plants_vs_zombies/18_plants_vs_zombies.jpg" width="800"></a>
 - [19_angry_birds](./single_player_games/19_angry_birds/README.md)
+
   <a href="./single_player_games/19_angry_birds/README.md"><img src="./single_player_games/19_angry_birds/19_angry_birds.jpg" width="800"></a>
 - [20_fruit_ninja](./single_player_games/20_fruit_ninja/README.md)
+
   <a href="./single_player_games/20_fruit_ninja/README.md"><img src="./single_player_games/20_fruit_ninja/20_fruit_ninja.jpg" width="800"></a>
