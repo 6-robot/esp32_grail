@@ -2,7 +2,7 @@
 
 ![Pacman](./7_pacman.jpg)
 
-文件: `7_pacman.ino`
+文件: [7_pacman.ino](./7_pacman.ino)
 
 ## 控制
 - 标题页蓝键: 开始

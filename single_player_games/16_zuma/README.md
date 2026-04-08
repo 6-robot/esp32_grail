@@ -2,7 +2,7 @@
 
 ![Zuma](./16_zuma.jpg)
 
-文件: `16_zuma.ino`
+文件: [16_zuma.ino](./16_zuma.ino)
 
 ## 控制
 - 摇杆: 瞄准

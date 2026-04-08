@@ -2,7 +2,7 @@
 
 ![Bomberman](./9_bomberman.jpg)
 
-文件: `9_bomberman.ino`
+文件: [9_bomberman.ino](./9_bomberman.ino)
 
 ## 玩法
 - 放置炸弹、清理砖块和敌人，完成关卡后进入下一关。

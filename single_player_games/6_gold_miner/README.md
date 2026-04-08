@@ -2,7 +2,7 @@
 
 ![Gold Miner](./6_gold_miner.jpg)
 
-文件: `6_gold_miner.ino`
+文件: [6_gold_miner.ino](./6_gold_miner.ino)
 
 ## 控制
 - 蓝键: 标题开始 / 发射钩子 / 失败后重开

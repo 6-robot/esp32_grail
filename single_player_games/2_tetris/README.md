@@ -2,7 +2,7 @@
 
 ![Tetris (ESP32)](./2_tetris.jpg)
 
-文件: `2_tetris.ino`
+文件: [2_tetris.ino](./2_tetris.ino)
 
 ## 控制
 - 摇杆左/右: 平移方块

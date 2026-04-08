@@ -2,7 +2,7 @@
 
 ![Billiards](./15_billiards.jpg)
 
-文件: `15_billiards.ino`
+文件: [15_billiards.ino](./15_billiards.ino)
 
 ## 控制
 - 摇杆: 调整击球方向

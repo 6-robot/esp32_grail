@@ -2,7 +2,7 @@
 
 ![Flappy Bird](./3_flappy_bird.jpg)
 
-文件: `3_flappy_bird.ino`
+文件: [3_flappy_bird.ino](./3_flappy_bird.ino)
 
 ## 玩法
 - 菜单推摇杆上或按按钮进入游戏。

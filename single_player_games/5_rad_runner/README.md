@@ -2,7 +2,7 @@
 
 ![RAD Runner](./5_rad_runner.jpg)
 
-文件: `5_rad_runner.ino`
+文件: [5_rad_runner.ino](./5_rad_runner.ino)
 
 ## 玩法
 - 摇杆左右控制车辆，不断前进累计里程。

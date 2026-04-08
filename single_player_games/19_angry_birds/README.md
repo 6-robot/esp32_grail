@@ -2,7 +2,7 @@
 
 ![Angry Birds](./19_angry_birds.jpg)
 
-文件: `19_angry_birds.ino`
+文件: [19_angry_birds.ino](./19_angry_birds.ino)
 
 ## 玩法
 - 标题页触摸或蓝键开始。

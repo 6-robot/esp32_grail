@@ -2,7 +2,7 @@
 
 ![Balloon Fight](./10_balloon_fight.jpg)
 
-文件: `10_balloon_fight.ino`
+文件: [10_balloon_fight.ino](./10_balloon_fight.ino)
 
 ## 控制
 - 摇杆左右: 漂移

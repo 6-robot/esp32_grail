@@ -2,7 +2,7 @@
 
 ![Plants vs Zombies](./18_plants_vs_zombies.jpg)
 
-文件: `18_plants_vs_zombies.ino`
+文件: [18_plants_vs_zombies.ino](./18_plants_vs_zombies.ino)
 
 ## 玩法
 - `4` 行草地，放置射手与坚果抵挡僵尸。

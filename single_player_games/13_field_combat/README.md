@@ -2,7 +2,7 @@
 
 ![Field Combat](./13_field_combat.jpg)
 
-文件: `13_field_combat.ino`
+文件: [13_field_combat.ino](./13_field_combat.ino)
 
 ## 控制
 - 摇杆: 移动指挥车

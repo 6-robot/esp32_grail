@@ -2,7 +2,7 @@
 
 ![Donkey Kong (Barrel Rescue)](./17_donkey_kong.jpg)
 
-文件: `17_donkey_kong.ino`
+文件: [17_donkey_kong.ino](./17_donkey_kong.ino)
 
 ## 操作
 - 摇杆左右: 移动

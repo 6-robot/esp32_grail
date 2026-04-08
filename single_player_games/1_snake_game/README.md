@@ -2,7 +2,7 @@
 
 ![Snake Game](./1_snake_game.jpg)
 
-文件: `1_snake_game.ino`
+文件: [1_snake_game.ino](./1_snake_game.ino)
 
 ## 玩法
 - 菜单按按钮开始。

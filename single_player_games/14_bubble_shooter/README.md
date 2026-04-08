@@ -2,7 +2,7 @@
 
 ![Bubble Shooter](./14_bubble_shooter.jpg)
 
-文件: `14_bubble_shooter.ino`
+文件: [14_bubble_shooter.ino](./14_bubble_shooter.ino)
 
 ## 控制
 - 摇杆左右: 调整发射角度

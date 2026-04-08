@@ -2,7 +2,7 @@
 
 ![Space Invaders (ESP32-S3)](./8_space_invaders.jpg)
 
-文件: `8_space_invaders.ino`
+文件: [8_space_invaders.ino](./8_space_invaders.ino)
 
 ## 控制
 - 摇杆左右: 移动飞船

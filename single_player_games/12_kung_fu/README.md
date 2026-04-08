@@ -2,7 +2,7 @@
 
 ![Kung Fu](./12_kung_fu.jpg)
 
-文件: `12_kung_fu.ino`
+文件: [12_kung_fu.ino](./12_kung_fu.ino)
 
 ## 控制
 - 蓝键: 标题开始 / 跳跃

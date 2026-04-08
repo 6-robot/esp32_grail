@@ -2,7 +2,7 @@
 
 ![Fruit Ninja](./20_fruit_ninja.jpg)
 
-文件: `20_fruit_ninja.ino`
+文件: [20_fruit_ninja.ino](./20_fruit_ninja.ino)
 
 ## 玩法
 - 触摸滑动切水果。

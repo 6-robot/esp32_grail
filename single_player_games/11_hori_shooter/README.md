@@ -2,7 +2,7 @@
 
 ![Horizon Shooter](./11_hori_shooter.jpg)
 
-文件: `11_hori_shooter.ino`
+文件: [11_hori_shooter.ino](./11_hori_shooter.ino)
 
 ## 控制
 - 摇杆: 移动飞机

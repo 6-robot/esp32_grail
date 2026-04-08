@@ -2,7 +2,7 @@
 
 ![Tank Battle](./4_tank_battle.jpg)
 
-文件: `4_tank_battle.ino`
+文件: [4_tank_battle.ino](./4_tank_battle.ino)
 
 ## 玩法
 - 按钮开始。
