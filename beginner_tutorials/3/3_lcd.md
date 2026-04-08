@@ -158,6 +158,8 @@
 </div>
 
 本节实验的实现思路是：在setup()函数里对LCD显示屏进行初始化。然后在loop()函数在LCD屏幕上显示"Hello World！"。在下载的例子源代码包里，对应的源码文件为lcd.ino。完整代码如下：
+[点击下载示例代码（lcd.ino）](./lcd/lcd.ino)
+
 ```c
 #include <TFT_eSPI.h>
 
@@ -249,6 +251,8 @@ void loop() {
 </div>
 
 在下载的例子源代码包里，对应的源码文件为lcd_chinese.ino。程序代码修改如下：
+[点击下载示例代码（lcd_chinese.ino）](./lcd_chinese/lcd_chinese.ino)
+
 ```c
 #include <TFT_eSPI.h>
 #include <U8g2_for_TFT_eSPI.h>

@@ -48,6 +48,8 @@
 </div>
 
 在下载的例子源代码包里，对应的源码文件为servo.ino。完整代码如下：
+[点击下载示例代码（servo.ino）](./servo/servo.ino)
+
 ```c
 const int servo_pin = 21;
 const int servo_ch = 0;
@@ -155,6 +157,8 @@ void loop()
 【扩展实验】
 
 结合摇杆控制实验的内容，可以使用摇杆来控制舵机的转角。在下载的例子源代码包里，对应的源码文件为servo_joystick.ino。完整程序代码如下：
+[点击下载示例代码（servo_joystick.ino）](./servo_joystick/servo_joystick.ino)
+
 ```c
 // 定义舵机控制引脚和通道
 const int servo_pin = 21;  // 舵机PWM信号输出引脚

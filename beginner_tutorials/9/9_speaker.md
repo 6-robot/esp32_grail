@@ -25,6 +25,8 @@
 </div>
 
 在下载的例子源代码包里，对应的源码文件为speaker.ino。完整代码如下：
+[点击下载示例代码（speaker.ino）](./speaker/speaker.ino)
+
 ```c
 #include <driver/i2s.h>
 
@@ -254,6 +256,8 @@ void loop() {
 【扩展实验】
 
 通过对notes数组中的音符顺序进行编辑，可以让程序播放特定的音乐。比如下面这个程序，运行之后，按下开发板面板的蓝色按钮，会播放著名歌曲《两只老虎》。在下载的例子源代码包里，对应的源码文件为speaker_two_tigers.ino。
+[点击下载示例代码（speaker_two_tigers.ino）](./speaker_two_tigers/speaker_two_tigers.ino)
+
 ```c
 #include <driver/i2s.h>
 

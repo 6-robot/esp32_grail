@@ -16,13 +16,13 @@
   <img src="media/image1.jpg" width="1248">
 </div>
 
-可以看到其中绿色按钮对应图中的K1开关，它连接的是ESP32的GPIO11引脚。默认按钮未按下时，K1处于断开状态。这样GPIO11通过上拉电阻R3与3.3V连接，GPIO11读取的就是高电平数值。
+可以看到其中绿色按钮对应图中的K3开关，它连接的是ESP32的GPIO11引脚。默认按钮未按下时，K3处于断开状态。这样GPIO11通过上拉电阻R3与3.3V连接，GPIO11读取的就是高电平数值。
 
 <div align="center">
   <img src="media/image2.jpg" width="1248">
 </div>
 
-当绿色按钮按下时，K1处于闭合状态。这样GPIO11会与GND连通，GPIO11读取的就是低电平数值。
+当绿色按钮按下时，K3处于闭合状态。这样GPIO11会与GND连通，GPIO11读取的就是低电平数值。
 
 <div align="center">
   <img src="media/image3.jpg" width="1248">
@@ -48,7 +48,9 @@
 
 - loop()函数在程序执行时会被不停的循环调用，所以程序的主体代码会放在这个函数里。
 
-本节实验的实现思路是：在setup()函数里将GPIO11引脚设置为输入模式，用于读取绿色按钮K1的电平信号。GPIO47引脚设置为输出模式，用于控制绿色LED的亮灭。然后在loop()函数里根据GPIO11的电平状态，来输出GPIO47的电平即可。在下载的例子源代码包里，对应的源码文件为io_input.ino。完整代码如下：
+本节实验的实现思路是：在setup()函数里将GPIO11引脚设置为输入模式，用于读取绿色按钮K3的电平信号。GPIO47引脚设置为输出模式，用于控制绿色LED的亮灭。然后在loop()函数里根据GPIO11的电平状态，来输出GPIO47的电平即可。在下载的例子源代码包里，对应的源码文件为io_input.ino。完整代码如下：
+[点击下载示例代码（io_input.ino）](./io_input/io_input.ino)
+
 ```c
 void setup() {
   pinMode(11, INPUT);
@@ -68,7 +70,7 @@ void setup() {
   pinMode(47, OUTPUT);
 }
 ```
-在程序启动时，将GPIO11引脚设置为输入模式，用于获取绿色按钮K1的输入电平。将GPIO47引脚设置为输出模式，用于控制绿色LED的亮灭。
+在程序启动时，将GPIO11引脚设置为输入模式，用于获取绿色按钮K3的输入电平。将GPIO47引脚设置为输出模式，用于控制绿色LED的亮灭。
 ```c
 void loop() {
   int state = digitalRead(11);
@@ -117,7 +119,9 @@ void loop() {
 
 【扩展实验】
 
-可以将蓝色按钮和蓝色LED也加入这个实验。在下载的例子源代码包里，对应的源码文件为io_output_ext.ino。具体代码如下：
+可以将蓝色按钮和蓝色LED也加入这个实验。在下载的例子源代码包里，对应的源码文件为io_input_ext.ino。具体代码如下：
+[点击下载示例代码（io_input_ext.ino）](./io_input_ext/io_input_ext.ino)
+
 ```c
 void setup() {
   pinMode(12, INPUT);

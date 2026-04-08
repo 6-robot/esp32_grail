@@ -25,6 +25,8 @@
 </div>
 
 在下载的例子源代码包里，对应的源码文件为mic.ino。完整代码如下：
+[点击下载示例代码（mic.ino）](./mic/mic.ino)
+
 ```c
 #include <driver/i2s.h>
 
@@ -330,6 +332,8 @@ void loop() {
 </div>
 
 然后编译运行如下代码。在下载的例子源代码包里，对应的源码文件为mic_psram.ino。
+[点击下载示例代码（mic_psram.ino）](./mic_psram/mic_psram.ino)
+
 ```c
 #include <driver/i2s.h>
 #include <esp_system.h>

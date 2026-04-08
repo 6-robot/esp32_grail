@@ -39,6 +39,8 @@
 </div>
 
 在下载的例子源代码包里，对应的源码文件为imu.ino。完整代码如下：
+[点击下载示例代码（imu.ino）](./imu/imu.ino)
+
 ```c
 #include <TFT_eSPI.h>
 #include <Wire.h>
@@ -220,6 +222,8 @@ void loop() {
 【扩展实验】
 
 MPU6050传感器除了姿态信息，还能检测惯性加速度以及温度信息。在下载的例子源代码包里，对应的源码文件为imu_detailed.ino。完整代码如下：
+[点击下载示例代码（imu_detailed.ino）](./imu_detailed/imu_detailed.ino)
+
 ```c
 #include <TFT_eSPI.h>
 #include <Wire.h>

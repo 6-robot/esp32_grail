@@ -21,6 +21,8 @@
 </div>
 
 在下载的例子源代码包里，对应的源码文件为wifi.ino。完整代码如下：
+[点击下载示例代码（wifi.ino）](./wifi/wifi.ino)
+
 ```c
 #include <TFT_eSPI.h>
 #include <WiFi.h>

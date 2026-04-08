@@ -43,6 +43,8 @@
   - loop()函数在程序执行时会被不停的循环调用，所以程序的主体代码会放在这个函数里。
 
   实验程序的实现思路是：在setup()函数里将GPIO47引脚设置为输出模式，然后在loop()函数里将GPIO47引脚的电平拉低。在下载的例子源代码包里，对应的源码文件为io_output.ino。完整代码如下：
+[点击下载示例代码（io_output.ino）](./io_output/io_output.ino)
+
 ```c
 void setup() {
   pinMode(47, OUTPUT);
@@ -132,6 +134,8 @@ void loop() {
 【扩展实验】
 
 可以在程序中加入延时，让LED交替闪烁，在下载的例子源代码包里，对应的源码文件为io_output_ext.ino。具体代码如下：
+[点击下载示例代码（io_output_ext.ino）](./io_output_ext/io_output_ext.ino)
+
 ```c
 void setup() {
   pinMode(47, OUTPUT);

@@ -24,7 +24,9 @@
   <img src="media/image2.jpg" width="570">
 </div>
 
-在下载的例子源代码包里，对应的源码文件为tf_recoder.ino。完整代码如下：
+在下载的例子源代码包里，对应的源码文件为tf_recorder.ino。完整代码如下：
+[点击下载示例代码（tf_recorder.ino）](./tf_recorder/tf_recorder.ino)
+
 ```c
 #include <SPI.h>
 #include <SD.h>

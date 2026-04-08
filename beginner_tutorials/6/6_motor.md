@@ -33,6 +33,8 @@
 </div>
 
 实验代码在下载的例子源代码包里，对应的文件为motor.ino。完整代码如下：
+[点击下载示例代码（motor.ino）](./motor/motor.ino)
+
 ```c
 const int motor_pin = 45;
 const int frequency = 15000;
@@ -126,6 +128,8 @@ void loop()
 【扩展实验】
 
 结合摇杆控制实验的内容，可以使用摇杆来控制电机的旋转速度。在下载的例子源代码包里，对应的源码文件为motor_joystick.ino。完整代码如下：
+[点击下载示例代码（motor_joystick.ino）](./motor_joystick/motor_joystick.ino)
+
 ```c
 // 电机PWM信号引脚
 const int motor_pin = 45;

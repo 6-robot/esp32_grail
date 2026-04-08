@@ -50,6 +50,8 @@
 
 在Arduino IDE里进行代码编写。本节实验的实现思路是：在setup()函数里进行触控芯片GT911和LCD显示驱动库TFT_eSPI的初始化。然后在loop()函数里使用TFT_eSPI的绘图函数，显示触控点在屏幕上的位置。同时在屏幕上显示触控点的坐标数值，这样就能比较直观的观察触控点信息的变化了。
 在下载的例子源代码包里，对应的源码文件为touch.ino。具体代码如下：
+[点击下载示例代码（touch.ino）](./touch/touch.ino)
+
 
 ```c
 #include <TAMC_GT911.h>

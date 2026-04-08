@@ -25,6 +25,8 @@
 </div>
 
 在下载的例子源代码包里，对应的源码文件为joystick.ino，完整代码如下：
+[点击下载示例代码（joystick.ino）](./joystick/joystick.ino)
+
 ```c
 #include <TFT_eSPI.h>
 
@@ -157,6 +159,8 @@ void loop() {
 【扩展实验】
 
 使用摇杆来控制LCD屏幕中显示的圆点。在下载的例子源代码包里，对应的源码文件为joystick_cycle.ino。完整代码如下：
+[点击下载示例代码（joystick_cycle.ino）](./joystick_cycle/joystick_cycle.ino)
+
 ```c
 #include <TFT_eSPI.h>
 

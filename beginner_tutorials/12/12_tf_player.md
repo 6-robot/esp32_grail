@@ -26,6 +26,8 @@
 </div>
 
 在下载的例子源代码包里，对应的源码文件为tf_player.ino。完整代码如下：
+[点击下载示例代码（tf_player.ino）](./tf_player/tf_player.ino)
+
 ```c
 #include <SPI.h>
 #include <SD.h>
